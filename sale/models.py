@@ -23,7 +23,7 @@ class Typeinfo(models.Model):
         verbose_name_plural = verbose_name
 
 class Carinfo(models.Model):
-    name = models.CharField('车辆信息',max_length=30,null=False)
+    name = models.CharField('安静的就看到',max_length=30,null=False)
     date = models.DateField('上牌日期',null=False)
     fadongnum = models.CharField('发动机号',max_length=20)
     mile = models.DecimalField('公里数',max_digits=7,decimal_places=2)
