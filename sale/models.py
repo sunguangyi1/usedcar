@@ -9,18 +9,6 @@ SHENHE =(
     (2,'审核通过'),
 )
 
-class Typeinfo(models.Model):
-    name = models.CharField('品牌名',max_length=20)
-    logo = models.ImageField('logo',upload_to='static/images/logo')
-    isDelete = models.BooleanField('是否删除',default=False)
-
-    def __str__(self):
-        return self.name
-
-    class Meta:
-        db_table = 'Type'
-        verbose_name = '品牌表'
-        verbose_name_plural = verbose_name
 
 class Carinfo(models.Model):
     name = models.CharField('车辆信息',max_length=30,null=False)
